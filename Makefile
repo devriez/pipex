@@ -39,6 +39,4 @@ test:
 	./pipex infile "ls -l" "wc -l" outfile
 
 memory:
-	valgrind \
-	touch infile \
-	./pipex infile "ls -l" "wc -l" outfile
+	valgrind $(test)
