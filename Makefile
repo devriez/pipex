@@ -37,6 +37,3 @@ re: fclean all
 test:
 	touch infile 
 	./pipex infile "ls -l" "wc -l" outfile
-
-memory:
-	valgrind $(test)
